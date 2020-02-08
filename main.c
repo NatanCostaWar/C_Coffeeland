@@ -233,6 +233,25 @@ int main(int argc,char** argv)
                     mouse.selection.state = 0;
                     mouse.moving = 0;
                     break;
+
+                case SDL_MOUSEWHEEL:
+                    if(event.wheel.y > 0)
+                    {
+                        renderWidth -= 32;
+                        renderHeight -= 18;
+                        camera.x -= 16;
+                        camera.y -= 9;
+                        SDL_RenderSetLogicalSize(renderer, renderWidth, renderHeight);
+                    }
+                    else if(event.wheel.y < 0)
+                    {
+                        renderWidth += 32;
+                        renderHeight += 18;
+                        camera.x += 16;
+                        camera.y += 9;
+                        SDL_RenderSetLogicalSize(renderer, renderWidth, renderHeight);
+                    }
+                    break;
                 
             }
         }
