@@ -215,8 +215,8 @@ int main(int argc,char** argv)
                     mouse.y = event.motion.y;
                     if (mouse.moving == 1)
                     {
-                        camera.x += event.motion.xrel; /*camera.x-((mouse.selection.x-mouse.x)/5);*/
-                        camera.y += event.motion.yrel; /*camera.y-((mouse.selection.y-mouse.y)/5);*/
+                        camera.x += event.motion.xrel;
+                        camera.y += event.motion.yrel;
                     }
                     break;
 

@@ -1,7 +1,7 @@
 OBJS =  main.c
 CC = gcc
-INCLUDE_PATHS = -IC:\Users\natan\Desktop\C_Cafe\libs\SDL2\include
-LIBRARY_PATHS = -LC:\Users\natan\Desktop\C_Cafe\libs\SDL2\lib
+INCLUDE_PATHS = -Ilibs\SDL2\include
+LIBRARY_PATHS = -Llibs\SDL2\lib
 COMPILER_FLAGS = -mconsole -std=c89 -pedantic
 LINKER_FLAGS = -lmingw32 -lSDL2main -lSDL2 -lSDL2_image
 OBJ_NAME = main
